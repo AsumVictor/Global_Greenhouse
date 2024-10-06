@@ -57,7 +57,7 @@ public class PartOneTestCases {
     @Test
     public void testGetYearWithHighestEmissions3(){
         Emission emi1 = new Emission(123.43, 453.23, 835.43);
-        Emission emi2 = new Emission(543, 645.34, 834.24);
+        Emission emi2 = new Emission(543, 1000.4324, 1200.4324);
         Emission emi3 = new Emission(643.23, 643.34, 635.34);
         Emission emi4 = new Emission(434.24, 345.23, 834.84);
         Emission emi5 = new Emission(234.34, 325.65, 363.75);
@@ -70,8 +70,28 @@ public class PartOneTestCases {
         emissions.put(2005,emi5);
         Country ghana = new Country("Ghana", emissions);
 
-        assertEquals();
+        assertEquals(2001, Util.getYearWithHighestEmissions(ghana));
     }
+
+    @Test
+    public void testGetYearWithHighestEmissions4(){
+        Emission emi1 = new Emission(123.43, 453.23, 835.43);
+        Emission emi2 = new Emission(234.23, 234.23, 24.23);
+        Emission emi3 = new Emission(643.23, 643.34, 635.34);
+        Emission emi4 = new Emission(434.24, 345.23, 834.84);
+        Emission emi5 = new Emission(324234.32, 325.65, 363.75);
+
+        Map<Integer, Emission> emissions = new HashMap<>();
+        emissions.put(1994,emi1);
+        emissions.put(1995,emi2);
+        emissions.put(1996,emi3);
+        emissions.put(1997,emi4);
+        emissions.put(1998,emi5);
+        Country nigeria = new Country("Nigeria", emissions);
+
+        assertEquals(1998, Util.getYearWithHighestEmissions(nigeria));
+    }
+
 
     /**
      * Tests the implementation of the Emission class.
