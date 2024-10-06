@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -16,6 +17,42 @@ import java.util.stream.Collectors;
  * THIS CLASS WON'T COMPILE UNTIL YOU CREATE YOUR COUNTRY AND SECTOR CLASSES
  */
 public class PartOneTestCases {
+
+
+
+    /////////////////////////////////////////////////////////////
+    //        Testing Util functions  with sectors             //
+    /////////////////////////////////////////////////////////////
+
+    @Test
+    public void testGetYearWithHighestEmissions1(){
+        Map<Integer, Double> emissions = new HashMap<>();
+        emissions.put(2000, 2278.8);
+        emissions.put(2001, 2356.43);
+        emissions.put(2002, 2243.3);
+        emissions.put(2003, 2543.3);
+        Sector sector = new Sector("Education", emissions);
+
+        // I'm checking that the method works as expected
+        assertEquals(2003, Util.getYearWithHighestEmissions(sector));
+    }
+
+    @Test
+    public void testGetYearWithHighestEmissions2(){
+        Map<Integer, Double> emissions = new HashMap<>();
+        emissions.put(2010, 745.43);
+        emissions.put(2011, 435.54);
+        emissions.put(2012, 234.42);
+        emissions.put(2013, 54323.43);
+        Sector sector = new Sector("Movie", emissions);
+
+        // I'm checking that the method works as expected
+        assertEquals(2013, Util.getYearWithHighestEmissions(sector));
+    }
+
+    /////////////////////////////////////////////////////////////
+    //        Testing Util functions  with country             //
+    /////////////////////////////////////////////////////////////
 
     /**
      * Tests the implementation of the Emission class.
