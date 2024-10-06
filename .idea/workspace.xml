@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0d5fc89b-b450-452e-9c49-a3bcf01fd2f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/PartOneTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/PartOneTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part2/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part2/PartTwoTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/PartTwoTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part2/Sector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Sector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,8 @@
     "JUnit.PartOneTestCases.testGetYearWithHighestEmissions2.executor": "Run",
     "JUnit.PartOneTestCases.testGetYearWithHighestEmissions3.executor": "Run",
     "JUnit.PartOneTestCases.testGetYearWithHighestEmissions4.executor": "Run",
+    "JUnit.PartTwoTestCases.executor": "Run",
+    "JUnit.PartTwoTestCases.testGetYearWithHighestEmissions1.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -57,22 +61,7 @@
       <recent name="C:\Users\AiAsum\IdeaProjects\Lab3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PartOneTestCases.testGetYearWithHighestEmissions4">
-    <configuration name="PartOneTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="part1" />
-      <option name="MAIN_CLASS_NAME" value="part1.PartOneTestCases" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="PartOneTestCases.testGetYearWithHighestEmissions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab3" />
       <extension name="coverage">
@@ -137,13 +126,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PartTwoTestCases.testGetYearWithHighestEmissions1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="part2" />
+      <option name="MAIN_CLASS_NAME" value="part2.PartTwoTestCases" />
+      <option name="METHOD_NAME" value="testGetYearWithHighestEmissions1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PartTwoTestCases.testGetYearWithHighestEmissions1" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions4" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions3" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions2" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions" />
-        <item itemvalue="JUnit.PartOneTestCases" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +175,15 @@
           <url>file://$PROJECT_DIR$/src/part1/PartOneTestCases.java</url>
           <line>59</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/part1/Util.java</url>
+          <line>43</line>
+          <properties class="part1.Util" method="sumYearEmission">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

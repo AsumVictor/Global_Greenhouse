@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -17,6 +18,79 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * EMISSION, COUNTRY, AND SECTOR CLASSES TO THE part2 DIRECTORY
  */
 public class PartTwoTestCases {
+
+    ///////////////////////////////////////////////////////////////////////
+    //        Testing for sectors  getYearWithHighestEmissions           //
+    //////////////////////////////////////////////////////////////////////
+
+    @Test
+    public void testGetYearWithHighestEmissions1(){
+        Map<Integer, Double> emissions = new HashMap<>();
+        emissions.put(2000, 2278.8);
+        emissions.put(2001, 2356.43);
+        emissions.put(2002, 2243.3);
+        emissions.put(2003, 2543.3);
+        Sector sector = new Sector("Education", emissions);
+
+        // I'm checking that the method works as expected
+        assertEquals(2003, sector.getYearWithHighestEmissions());
+    }
+
+    @Test
+    public void testGetYearWithHighestEmissions2(){
+        Map<Integer, Double> emissions = new HashMap<>();
+        emissions.put(2010, 745.43);
+        emissions.put(2011, 435.54);
+        emissions.put(2012, 234.42);
+        emissions.put(2013, 54323.43);
+        Sector sector = new Sector("Movie", emissions);
+
+        // I'm checking that the method works as expected
+        assertEquals(2013, sector.getYearWithHighestEmissions());
+    }
+
+    ///////////////////////////////////////////////////////////////////////
+    //        Testing for country  getYearWithHighestEmissions           //
+    //////////////////////////////////////////////////////////////////////
+
+    @Test
+    public void testGetYearWithHighestEmissions3(){
+        Emission emi1 = new Emission(123.43, 453.23, 835.43);
+        Emission emi2 = new Emission(543, 1000.4324, 1200.4324);
+        Emission emi3 = new Emission(643.23, 643.34, 635.34);
+        Emission emi4 = new Emission(434.24, 345.23, 834.84);
+        Emission emi5 = new Emission(234.34, 325.65, 363.75);
+
+        Map<Integer, Emission> emissions = new HashMap<>();
+        emissions.put(2002,emi1);
+        emissions.put(2001,emi2);
+        emissions.put(2003,emi3);
+        emissions.put(2004,emi4);
+        emissions.put(2005,emi5);
+        Country ghana = new Country("Ghana", emissions);
+
+        assertEquals(2001, ghana.getYearWithHighestEmissions());
+    }
+
+    @Test
+    public void testGetYearWithHighestEmissions4(){
+        Emission emi1 = new Emission(123.43, 453.23, 835.43);
+        Emission emi2 = new Emission(234.23, 234.23, 24.23);
+        Emission emi3 = new Emission(643.23, 643.34, 635.34);
+        Emission emi4 = new Emission(434.24, 345.23, 834.84);
+        Emission emi5 = new Emission(324234.32, 325.65, 363.75);
+
+        Map<Integer, Emission> emissions = new HashMap<>();
+        emissions.put(1994,emi1);
+        emissions.put(1995,emi2);
+        emissions.put(1996,emi3);
+        emissions.put(1997,emi4);
+        emissions.put(1998,emi5);
+        Country nigeria = new Country("Nigeria", emissions);
+
+        assertEquals(1998, nigeria.getYearWithHighestEmissions());
+    }
+
 
     /**
      * Tests the implementation of the Emission class.
