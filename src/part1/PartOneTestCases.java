@@ -54,6 +54,25 @@ public class PartOneTestCases {
     //        Testing Util functions  with country             //
     /////////////////////////////////////////////////////////////
 
+    @Test
+    public void testGetYearWithHighestEmissions3(){
+        Emission emi1 = new Emission(123.43, 453.23, 835.43);
+        Emission emi2 = new Emission(543, 645.34, 834.24);
+        Emission emi3 = new Emission(643.23, 643.34, 635.34);
+        Emission emi4 = new Emission(434.24, 345.23, 834.84);
+        Emission emi5 = new Emission(234.34, 325.65, 363.75);
+
+        Map<Integer, Emission> emissions = new HashMap<>();
+        emissions.put(2002,emi1);
+        emissions.put(2001,emi2);
+        emissions.put(2003,emi3);
+        emissions.put(2004,emi4);
+        emissions.put(2005,emi5);
+        Country ghana = new Country("Ghana", emissions);
+
+        assertEquals();
+    }
+
     /**
      * Tests the implementation of the Emission class.
      *

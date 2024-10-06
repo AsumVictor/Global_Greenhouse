@@ -40,6 +40,7 @@
     "JUnit.PartOneTestCases.testEmissionImplSpecifics.executor": "Run",
     "JUnit.PartOneTestCases.testGetYearWithHighestEmissions.executor": "Run",
     "JUnit.PartOneTestCases.testGetYearWithHighestEmissions2.executor": "Run",
+    "JUnit.PartOneTestCases.testGetYearWithHighestEmissions3.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -56,7 +57,7 @@
       <recent name="C:\Users\AiAsum\IdeaProjects\Lab3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PartOneTestCases.testGetYearWithHighestEmissions2">
+  <component name="RunManager" selected="JUnit.PartOneTestCases.testGetYearWithHighestEmissions3">
     <configuration name="PartOneTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab3" />
       <extension name="coverage">
@@ -120,8 +121,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PartOneTestCases.testGetYearWithHighestEmissions3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="part1" />
+      <option name="MAIN_CLASS_NAME" value="part1.PartOneTestCases" />
+      <option name="METHOD_NAME" value="testGetYearWithHighestEmissions3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions3" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions2" />
         <item itemvalue="JUnit.PartOneTestCases.testGetYearWithHighestEmissions" />
         <item itemvalue="JUnit.PartOneTestCases" />

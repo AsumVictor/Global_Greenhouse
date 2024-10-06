@@ -1,5 +1,6 @@
 package part1;
 
+import java.util.List;
 import java.util.Map;
 
 public class Util {
@@ -22,6 +23,26 @@ public class Util {
     }
 
     public static int getYearWithHighestEmissions(Country country){
-        return 2;
+        Map<Integer, Emission> emissions = country.getEmissions();
+
+        double highestTotalEmission = Double.NEGATIVE_INFINITY;
+        int yearItOccures = 0;
+
+        for(Map.Entry<Integer, Emission> emission: emissions.entrySet()){
+            double totalEmision = sumYearEmission(emission.getValue());
+
+            if(totalEmision > highestTotalEmission ){
+                highestTotalEmission = totalEmision;
+                yearItOccures = emission.getKey();
+            }
+
+        }
+
+         return yearItOccures;
     }
+
+    private static double sumYearEmission(Emission emission){
+        return emission.getCH4() + emission.getCO2() + emission.getN2O();
+    }
+
 }
