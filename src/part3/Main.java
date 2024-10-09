@@ -16,13 +16,14 @@ public class Main {
 //        * Which country had the highest methane gas emissions in 2000? *
         Country c1 = Country.countryWithHighestCH4InYear(countries, 2000);
         System.out.println(c1.getName() + " had the highest methane gas emissions in 2000");
+
 //        Which country had the highest increase in greenhouse gas emissions between 1988 (the year the
 //        Intergovernmental Panel on Climate Change was formed) and 2012?
-        Country c2 = Country.countryWithHighestChangeInEmissions(countries, 1998, 2012);
+        Country c2 = Country.countryWithHighestChangeInEmissions(countries, 1988, 2012);
         System.out.println();
 
 //        Which sector had the highest change in greenhouse gas emissions between 1988 and 2012?
-        Sector.sectorWithBiggestChangeInEmissions(sectors, 1998, 2012);
+        Sector.sectorWithBiggestChangeInEmissions(sectors, 1988, 2012);
 
     }
 

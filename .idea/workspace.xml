@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d5fc89b-b450-452e-9c49-a3bcf01fd2f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/part3/countries.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part3/sectors.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part3/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part3/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part3/Emission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part3/Emission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part3/Sector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part3/Sector.java" afterDir="false" />
     </list>
@@ -38,28 +33,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.PartOneTestCases.executor": "Run",
-    "JUnit.PartOneTestCases.testEmissionImplSpecifics.executor": "Run",
-    "JUnit.PartOneTestCases.testGetYearWithHighestEmissions.executor": "Run",
-    "JUnit.PartOneTestCases.testGetYearWithHighestEmissions2.executor": "Run",
-    "JUnit.PartOneTestCases.testGetYearWithHighestEmissions3.executor": "Run",
-    "JUnit.PartOneTestCases.testGetYearWithHighestEmissions4.executor": "Run",
-    "JUnit.PartTwoTestCases.executor": "Run",
-    "JUnit.PartTwoTestCases.testGetYearWithHighestEmissions1.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/AiAsum/IdeaProjects/Lab3/src/part3",
-    "onboarding.tips.debug.path": "C:/Users/AiAsum/IdeaProjects/Lab3/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.PartOneTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartOneTestCases.testEmissionImplSpecifics.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartOneTestCases.testGetYearWithHighestEmissions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartOneTestCases.testGetYearWithHighestEmissions2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartOneTestCases.testGetYearWithHighestEmissions3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartOneTestCases.testGetYearWithHighestEmissions4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartTwoTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartTwoTestCases.testGetYearWithHighestEmissions1.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AiAsum/IdeaProjects/Lab3/src/part3&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/AiAsum/IdeaProjects/Lab3/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AiAsum\IdeaProjects\Lab3\src\part3" />

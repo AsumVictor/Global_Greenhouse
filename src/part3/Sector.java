@@ -40,7 +40,8 @@ public class Sector {
 
         double highestAverage = Double.NEGATIVE_INFINITY;
         Sector sectorItOccurs = null;
-        int yearDiff = endYear - startYear;
+
+        int yearDiff = (endYear - startYear) + 1;
 
         for(Sector sector: sectors){
 
@@ -54,6 +55,7 @@ public class Sector {
             }
 
             // calculating average
+
             double avgEmission = totalSumOfEmission / yearDiff;
 
             if(avgEmission > highestAverage){
