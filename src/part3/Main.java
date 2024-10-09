@@ -1,9 +1,5 @@
 package part3;
 
-import part2.Country;
-import part2.Emission;
-import part2.Sector;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -16,6 +12,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         List<Country> countries = getCountries();
         List<Sector> sectors = getSectors();
+
+//        * Which country had the highest methane gas emissions in 2000? *
+        Country c1 = Country.countryWithHighestCH4InYear(countries, 2000);
+        System.out.println(c1.getName() + " had the highest methane gas emissions in 2000");
+//        Which country had the highest increase in greenhouse gas emissions between 1988 (the year the
+//        Intergovernmental Panel on Climate Change was formed) and 2012?
+        Country c2 = Country.countryWithHighestChangeInEmissions(countries, 1998, 2012);
+        System.out.println();
+
+//        Which sector had the highest change in greenhouse gas emissions between 1988 and 2012?
+        Sector.sectorWithBiggestChangeInEmissions(sectors, 1998, 2012);
+
     }
 
 	/**
@@ -27,7 +35,7 @@ public class Main {
      * @throws FileNotFoundException If the countries.csv file does not exist
      */
     private static List<Country> getCountries() throws FileNotFoundException {
-        File dataFile = new File("countries.csv");
+        File dataFile = new File("src/part3/countries.csv");
         Map<String, Map<Integer, Emission>> emissions = new HashMap<>();
 
         Scanner scan = new Scanner(dataFile);
@@ -70,7 +78,7 @@ public class Main {
      * @throws FileNotFoundException If the sectors.csv file does not exist
      */
     private static List<Sector> getSectors() throws FileNotFoundException {
-        File dataFile = new File("sectors.csv");
+        File dataFile = new File("src/part3/sectors.csv");
         Map<String, Map<Integer, Double>> tempMap = new HashMap<>();
         Scanner scan = new Scanner(dataFile);
         scan.nextLine(); // Skip the header line

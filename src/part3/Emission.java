@@ -22,4 +22,8 @@ public class Emission {
     public double getCH4() {
         return this.ch4;
     }
+
+    public double sumEmissions(){
+        return this.ch4 + this.co2 + this.n2o;
+    }
 }
